@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import {
   FaAward,
@@ -179,7 +180,9 @@ function App() {
             />
           </div>
           <div>
-            <div className="text-xl font-bold text-gray-900">{studentData.name}</div>
+            <div className="text-xl font-bold text-gray-900">
+              {studentData.name}
+            </div>
             <div className="grid grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-2">
               <span className="p-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-md">
                 Regd. No: {studentData.studentRedgNo}
@@ -406,7 +409,8 @@ function App() {
             </p>
             <p className="text-sm flex text-start">
               <FaBirthdayCake className="w-4 h-4 text-gray-600 mr-2" />
-              <span className="font-semibold">DOB:-</span> {studentData.dob}
+              <span className="font-semibold">DOB:-</span>{" "}
+              {formatDate(studentData.dob)}
             </p>
             <p className="text-sm flex text-start">
               <FaMapMarkerAlt className="w-4 h-4 text-gray-600 mr-2" />
