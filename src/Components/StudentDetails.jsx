@@ -131,7 +131,7 @@ const StudentDetails = () => {
             </div>
             <div className="flex items-center">
               <FaPhone className="w-5 h-5 text-gray-600 mr-2" />
-              <p className="text-gray-700 text-sm">Mobile: 06370844964</p>
+              <p className="text-gray-700 text-sm">Mobile: {studentData?.mobile}</p>
             </div>
             <div className="flex items-center">
               <FaEnvelopeOpenText className="w-5 h-5 text-gray-600 mr-2" />
